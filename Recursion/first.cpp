@@ -1,8 +1,21 @@
+//practicing the recursion question
 #include<iostream>
 using namespace std;
 
+void fun(int n);
+
 int main()
 {
-    cout<<"Hello World";
-    return 0;
+  fun(3);
+  return 0;  
+}
+
+void fun(int n)
+{
+    if(n==0)
+    return ;
+
+    cout<<n<<endl;
+    fun(n-1);
+    cout<<n<<endl;
 }
